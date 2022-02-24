@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML, HTML5, CSS, CSS3</title>
+    <style>
+        .main {
+            width: 50px;
+            height: 50px;
+            /* background-color: cadetblue; */
+        }
+
+        .row1-col1 {
+            width: 1215px;
+            height: 24px;
+            background-color: blueviolet;
+            font-size: 20px;
+            /* float: left; */
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            top: 0px;
+        }
+
+        /* .row1-col2 {
+            width: 200px;
+            height: 50px;
+            background-color: brown;
+            font-size: 20px;
+            /* float: left; */
+        /* text-align: center; */
+        /* } */
+
+        /* .row1-col3 {
+            width: 200px;
+            height: 50px;
+            background-color: burlywood;
+            font-size: 20px; */
+        /* float: left; */
+        /* text-align: center; */
+        /* } */
+
+        /* .row1-col4 {
+            width: 200px;
+            height: 50px;
+            background-color: lightgreen;
+            font-size: 20px;
+            /* float: left; */
+        /* text-align: center; */
+        /* } */
+        .inline {
+            width: 500px;
+            height: 500px;
+            border: 2px red solid;
+            background-color: lightcoral;
+            display: grid;
+            margin: auto;
+            padding: 10px;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px 20px;
+        }
+        .inline div {
+            border: 2px black solid;
+            padding: 50px;
+            background-color: cadetblue;
+            font-size: 50px;
+        }
+        .div1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .div2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row1"></div>
+        <div class="row1-col1">Home | About | Services | Contact Us</div>
+        <!-- <div class="row1-col2">About</div>
+        <div class="row1-col3">Services</div>
+        <div class="row1-col4">Contact Us</div> -->
+    </div>
+    <h1>Selfie Time h1tag</h1>
+    <h2>Selfie Time h2tag</h2>
+    <h3>Selfie Time h3tag</h3>
+    <h4>Selfie Time h4tag</h4>
+    <h5>Selfie Time h5tag</h5>
+    <h6>Selfie Time h6tag</h6>
+    <img src="a.jpg" alt="Error Loading" height="100px"> img tag
+    <h2>Enquiry</h2>
+    <form>
+        <fieldset>
+            <legend>Enquiry</legend>
+            Name: type=text
+            <input type="text" maxlength="20" minlength="5" autofocus="" required="">
+            <br>
+            <br>
+            Age: type=Number
+            <input type="number" required="" value="">
+            <br>
+            <br>
+            Address: Textarea tag
+            <textarea required=""></textarea>
+            <br>
+            <br>
+            Gender: Radio Button
+            <input type="radio" value="male" name="gender">Male
+            <input type="radio" value="female" name="gender">Female
+            <input type="radio" value="other" name="gender">Other
+            <br>
+            <br>
+            State: Option
+            <select>
+                <option value=""></option>
+                <optgroup label="State">
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chattisgarh">Chattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Kerala">Kerala</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            Hobbies: Checkbox
+            <input type="checkbox" name="hobbies">Dancing
+            <input type="checkbox" name="hobbies" checked="">Cycling
+            <br>
+            <br>
+            Image: <input type="file" name="image">type=file
+        </fieldset>
+    </form>
+    <h2>Anchor Tag</h2>
+    <a
+        href="https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/ua05gxozoq3du3gkilss.jpg">Visit
+        to Goku</a>
+    <h2>Logo's</h2>
+    <div>
+        Copy Right &copy &copy;
+    </div>
+    <div>
+        Trade Mark &trade &trade;;
+    </div>
+    <div>
+        Registered Trade Mark &reg &reg;
+    </div>
+    <div>
+        Hello&nbsp;Everyone &nbsp
+    </div>
+    <div>
+        Hello&ensp;Everyone &ensp
+    </div>
+    <div>
+        Hello&emsp;Everyone &emsp
+    </div>
+    <div>
+        &#8377;9000 &#8377
+    </div>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Html</li>
+        <li type="I">CSS type=I</li>
+        <li type="i">JAVASCRIPT type=i</li>
+        <li type="A">Form type=A</li>
+        <li type="a">CSS type=a</li>
+    </ol>
+    <h2>Unordered List</h2>
+    <ul>
+        <li type="square">Html type=square</li>
+        <li>CSS type=disc</li>
+        <li type="circle">JAVASCRIPT type=circle</li>
+        <li type="none">python type=none</li>
+    </ul>
+    <h2>HTML5</h2>
+    <form>
+        <fieldset>
+            <legend> <strong> HTML5 </strong></legend>
+            Color: type=color
+            <input type="Color" name="Color" value="#FF0000">
+            <br>
+            <br>
+            E-Mail: type=e-mail
+            <input type="E-Mail" name="E-Mail">
+            <br>
+            <br>
+            Age: type=number
+            <input type="number" name="Age">
+            <br>
+            <br>
+            img: type=hidden
+            <input type="hidden" name="img">
+            <br>
+            <br>
+            submit: type=submit
+            <input type="submit" name="submit">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend> <b> Calendar </b></legend>
+            Date: type=date
+            <input type="Date" name="date">
+            <br>
+            <br>
+            Time: type=time
+            <input type="time" name="time">
+            <br>
+            <br>
+            Date-Time: type=datetime-local
+            <input type="datetime-local" name="date-time">
+            <br>
+            <br>
+            Month: type=month
+            <input type="month" name="month">
+            <br>
+            <br>
+            Week: type=week
+            <input type="week" name="week">
+            <br>
+            <br>
+            Range: type=range
+            <input type="range" name="range" min="0" max="100" value="10">
+        </fieldset>
+    </form>
+    <p>
+    <h2>Paragraph</h2>
+    <br>
+    Son Goku is a fictional character and the star of the Dragon Ball manga series
+    created by Akira Toriyama. Serving as the main protagonist of the series, he is based on
+    Sun Wukong (known as Son Goku in Japan and Monkey King in the West), a main character in
+    the classic Chinese novel Journey to the West (16th century), combined with influences
+    from the Hong Kong martial arts films of Jackie Chan and Bruce Lee. Goku first made his
+    debut in the first Dragon Ball chapter, Bulma and Son Goku, originally
+    published in Japan's Weekly Shōnen Jump magazine on December 3, 1984. Goku is
+    introduced as an eccentric, monkey-tailed boy who practices martial arts and possesses
+    superhuman strength. He meets Bulma and joins her on a journey to find the magical seven
+    Dragon Balls that can grant the user one wish. Along the way, he finds new friends who
+    follow him on his journey to become a stronger fighter. As Goku grows up, he becomes the
+    Earth's mightiest warrior and battles a wide variety of villains with the help of his
+    friends and family, while also gaining new allies in the process.
+    </p>
+    <h2>Grid</h2>
+    <div class="inline"> div) grid-template-columns, grid-gap
+        <div class="div1">1.</div> div1) grid-row-start, grid-row-end
+        <div class="div2">2.</div> div2) grid-column-start,grid-column-end  
+        <div>3.</div>
+        <div>4.</div>
+        <div>5.</div>
+    </div>
+    <h2>iframe</h2>
+    <div style="width: 600px; margin: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7kgyZWanVb8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <h2>Find us on Map</h2> 
+    <div style="width: 600px; margin: auto;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.2267699514014!2d74.62226331447813!3d24.89024535019425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968a1df0c49065f%3A0xcdd6eb49cab42483!2sRealme%20Smart%20store!5e0!3m2!1sen!2sin!4v1645527408620!5m2!1sen!2sin"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
+
+</html>
